@@ -1,0 +1,42 @@
+# =============================================================================
+# ZeroVoice Voxtral TTS — .gitignore
+# =============================================================================
+
+# --- Model weights (large binaries, download from HuggingFace) ---
+*.safetensors
+Voxtral-4B-TTS-2603/
+
+# --- Claude Code project config ---
+.claude/
+
+# --- Skills (private, not part of this project) ---
+ZeroBytes-Family-Skills/
+
+# --- Generated audio (test artifacts) ---
+*.wav
+
+# --- Test and patch scripts (development artifacts) ---
+test_*.py
+patch_*.py
+fix_*.py
+install_modules.sh
+
+# --- Python environments ---
+.venv/
+.wsl-venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+.DS_Store
+
+# --- Misc development artifacts ---
+notes.txt
+zerovoice-kokorotts-v2-tins.md
