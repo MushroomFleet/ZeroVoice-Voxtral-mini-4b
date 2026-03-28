@@ -1,5 +1,8 @@
 # ZeroVoice for Voxtral-4B-TTS-2603
 
+V3 Release: [https://github.com/MushroomFleet/ZeroVoice-V3-Voxtral-mini-4b](https://github.com/MushroomFleet/ZeroVoice-V3-Voxtral-mini-4b)
+- new Tauri frontend in Rust with python sidecar to WSL
+
 **Procedural voice generation for Mistral AI's Voxtral TTS model.** From 20 preset voices and zero stored bytes of additional voice data, ZeroVoice derives thousands of unique voices using position-is-seed coordinate hashing and spherical interpolation (SLERP).
 
 Any 3D coordinate `(x, y, z)` deterministically produces a unique blended voice. The same coordinate always produces the same voice, on any machine, in any order. No database, no stored state -- the voice space springs complete from coordinates.
